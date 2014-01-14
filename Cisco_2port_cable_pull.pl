@@ -10,10 +10,10 @@
 use strict;
 use Net::Telnet::Cisco;
 
-my $user = "admin";					# username
-my $pass = "lightn7ng";				# password
-my $ip = "";						# host or IP
-my @port = ("9/9","9/11","9/10");	# ports to manipulate, NOTE: the first two ports will be used
+my $user = "";					# username
+my $pass = "";					# password
+my $ip = "";					# host or IP
+my @port = ("9/9","9/11","9/10");		# ports to manipulate, NOTE: the first two ports will be used
 my $elementSize = 0+@port;			# size of @port array
 my $ntimes = 5;						# number of loops of cable pull cycles.. 1 cycle => all ports cable pull
 my $sleeptime = 45;					# global sleep time
